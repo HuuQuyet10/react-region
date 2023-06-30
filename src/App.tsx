@@ -11,6 +11,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path={RouteConst.LOGIN_URL} component={LoginPage} />
+
         <PrivateRoutes />
       </Switch>
     </BrowserRouter>

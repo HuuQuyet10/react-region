@@ -1,0 +1,46 @@
+image: alpine:latest
+
+stages:
+  - build-code
+  - deploy
+
+variables:
+  SSH_PRIVATE_KEY: $SSH_PRIVATE_KEY
+  VPS_SERVER: "128.199.227.129"
+  VPS_USER: "root"
+  VPS_DEPLOY_DIR: "/home/test2"
+
+before_script:
+  - apt-get update -y
+  - apt-get install openssh-client -y
+  - mkdir -p ~/.ssh
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+  - ssh-keyscan -H $VPS_SERVERss >> ~/.ssh/known_hosts
+
+Build Code:
+  stage: build-code
+  script:
+    - export CI=false
+    - export NODE_OPTIONS=--max_old_space_size=6144 
+    - npm install
+    - npm run build
+  cache:
+    key: npm-cache
+    paths:
+      - node_modules
+  artifacts:
+    paths:
+      - build
+    expire_in: 1200 seconds
+  only:
+    - master
+  timeout: 20m
+
+Deploy:
+  stage: deploy
+  script:
+    - ssh $VPS_USER@$VPS_SERVER "sudo mkdir -p $VPS_DEPLOY_DIR"
+    - scp -r ./build/* $VPS_USER@$VPS_SERVER:$VPS_DEPLOY_DIR
+  only:
+    - master

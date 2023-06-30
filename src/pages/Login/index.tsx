@@ -63,6 +63,12 @@ const LoginPage = () => {
     }
   }, [isSuccess]);
 
+  const initialValues = {
+    username: "admin",
+    password: "12345678"
+  };
+  form.setFieldsValue(initialValues);
+
   return (
       <div className="loginPage">
         <Form
@@ -96,7 +102,7 @@ const LoginPage = () => {
                   {required: true, message: "Please input your email username!"}
                 ]}
             >
-              <Input />
+              <Input value="dfdsf"/>
             </Form.Item>
 
             <Form.Item
