@@ -1,0 +1,37 @@
+
+.tableJobList{
+  .pageHeading{
+    .ant-page-header{
+     padding-bottom: 10px;
+    }
+  }
+  .jobs-table{
+    .jobStatus{
+      a{
+        color: inherit;
+        text-decoration: underline;
+      }
+      &.CREATED{
+        color: #9f9d0b;
+      }
+      &.DOING{
+        color: #1bb401;
+      }
+      &.WAITING_REVIEW{
+        color: #10c2f7;
+      }
+      &.REVIEWING{
+        color: #ff9930;
+      }
+      &.COMPLETED{
+        color: #d21fff;
+      }
+      &.CANCELLED{
+        color: #333;
+      }
+      &.COMPLETED_LATE{
+        color: red;
+      }
+    }
+  }
+}

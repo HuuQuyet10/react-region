@@ -1,0 +1,18 @@
+
+
+.homepage{
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+  .msgWelcome{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .btnGroups{
+    a{
+      margin: 0 5px;
+    }
+  }
+}

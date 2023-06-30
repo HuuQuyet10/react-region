@@ -1,0 +1,23 @@
+
+.page404{
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .btnGroups{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(255,255,255,0.7);
+    border-radius: 10px;
+    transform: translate(-50% -50%);
+    button{
+      margin: 0 5px;
+    }
+  }
+}

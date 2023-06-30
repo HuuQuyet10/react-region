@@ -1,0 +1,37 @@
+#loginForm {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 60px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(255,255,255,0.7);
+
+  .btnContainer {
+    padding-top: 20px;
+  }
+
+  .submitBtn {
+    min-width: 150px;
+    float: right;
+  }
+
+  .forgotBtn {
+    padding: 0;
+    line-height: 40px;
+  }
+
+  .errorMessage {
+    margin-bottom: 1em;
+  }
+}
+
+
+.loginPage{
+  background: url("./assets/bg-login.jpg") center center fixed no-repeat transparent;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

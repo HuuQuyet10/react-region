@@ -1,0 +1,14 @@
+@import "../../../styles/variable";
+
+.viewJobPage{
+  .flex{
+    display: flex;
+  }
+  .justify-between{
+    justify-content: space-between;
+  }
+  .row-item{
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}

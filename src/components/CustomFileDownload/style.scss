@@ -1,0 +1,20 @@
+.customFileDownload {
+  .item{
+    display: flex;
+    margin-bottom: 5px;
+
+    .fileName{
+      flex: 1 0 0;
+    }
+    .btnDownload{
+      flex: 150px 0 0;
+      display: flex;
+      justify-content: center;
+    }
+    .btnDelete{
+      flex: 60px 0 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.delete-confirm-popover {
+  min-width: 255px;
+  padding: 16px 15px;
+  margin: -12px -16px;
+
+  .ant-btn-sm {
+    min-width: 40px;
+  }
+
+  .ant-space-horizontal {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ant-typography {
+    text-align: left;
+    display: flex;
+    .anticon {
+      margin-right: 10px;
+      position: relative;
+      top: 3px;
+    }
+  }
+}

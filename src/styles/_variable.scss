@@ -1,0 +1,28 @@
+
+
+$widthSidebarFull: 320px;
+$widthSidebarCollapsed: 80px;
+
+
+@mixin paddingLeft($padding) {
+  padding-left: #{$padding};
+}
+@mixin paddingRight($padding) {
+  padding-right: #{$padding};
+}
+@mixin paddingTop($padding) {
+  padding-top: #{$padding};
+}
+@mixin paddingBottom($padding) {
+  padding-bottom: #{$padding};
+}
+@mixin paddingX($padding) {
+  padding-left: #{$padding};
+  padding-right: #{$padding};
+}
+
+@mixin paddingY($padding) {
+  padding-top: #{$padding};
+  padding-bottom: #{$padding};
+}
+

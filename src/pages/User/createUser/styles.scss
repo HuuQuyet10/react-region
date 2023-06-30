@@ -1,0 +1,33 @@
+
+.createUserPage,
+.pageChangePassword{
+  .ant-page-header{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .form-buttons{
+    text-align: right;
+    button{
+      margin-left: 15px;
+    }
+  }
+  .password-generate{
+    text-align: right;
+    button{
+      padding-right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

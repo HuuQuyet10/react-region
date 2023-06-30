@@ -1,0 +1,21 @@
+.switch-popconfirm {
+  .ant-typography {
+    padding-left: 24px;
+    position: relative;
+
+    .anticon {
+      position: absolute;
+      left: 0;
+      top: 4px;
+    }
+  }
+
+  .ant-space-horizontal {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ant-btn {
+    min-width: 40px;
+  }
+}
